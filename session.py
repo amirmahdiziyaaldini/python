@@ -14,5 +14,5 @@ print("Hello Mr/Mrs", full_name, "welcome.")
 
 toman = int(input("Enter amount in toman: "))
 exchange_rate = 180000
-dollar = toman / exchange_rate
+dollar = toman * exchange_rate
 print(dollar)
