@@ -2,7 +2,8 @@ player_1_score = 0
 player_2_score = 0
 round_number = 1
 
-while round_number <= 3:
+while True:
+# while player_1_score < 3 and player_2_score < 3:
     print("Round", round_number)
 
     player_1 = input("Player 1 (r, p, s): ")
@@ -41,7 +42,10 @@ while round_number <= 3:
             player_2_score = player_2_score + 1
 
         print("--------------------")
-        round_number = round_number + 1
+
+        if player_1_score < 3 and player_2_score < 3:
+            break
+         
 
 
 print("Player 1 score:", player_1_score)
